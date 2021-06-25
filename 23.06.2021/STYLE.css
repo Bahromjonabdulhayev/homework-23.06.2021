@@ -1,0 +1,252 @@
+*{
+    margin:0 ;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 500px;
+    background-color: #eee;
+    display: flex;
+}
+
+header .left{
+    width: 50%;
+    height: 500px;
+    background-color: #517df0;
+    color: #fff;
+    position: relative;
+}
+header .left .logo{
+    width: auto;
+}
+header .left a{
+    color: #fff;
+}
+header .left img{
+    width: 65%;
+}
+header .left div:nth-child(1){
+    position: absolute;
+    top: 0;
+    left:0;
+}
+header .left div:nth-child(2){
+    display: none;
+ 
+}
+
+header .left div:nth-child(3){
+    width: 350px;
+    font-size: 14px;
+    position: absolute;
+    top:50%;
+    left:60%;
+    transform: translate(-80%,-50%);
+}
+header .left div:nth-child(4){
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 4px;
+    border: 2px solid white;
+    border-radius:20px ;
+    position: absolute;
+    top:55%;
+    left: 13%;
+    }
+header .left div:nth-child(5){
+     position: absolute;
+     top:50%;
+     left: 50%;
+     transform: translate(140%,-50%);
+}    
+
+header .right{
+    width: 50%;
+    height:500px ;
+    /* background-color: #eee; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+}
+header .right nav ul{
+    display: flex;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+header .right nav ul li{
+    margin: 0 10px;
+}
+header .right nav ul li a{
+    color: black;
+}
+header .right nav ul li a:hover{
+    color: blue;
+    font-weight: bolder;
+}
+header .right div a i{
+    color: white;
+    background-color: #517df0;
+    padding: 10px 7px;
+    font-size: 20px;
+    display: none;
+}
+
+header .right p{
+    width: 70%;
+    text-align: right;
+    margin-left: 110px;
+    font-style: italic;
+    color: rgb(110, 105, 105);
+    margin-bottom: 50px;
+}
+
+
+header .right div:first-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: #343e55;
+    position: relative;
+}
+footer div .foto1{width: 70%;}
+footer div img{width: 100%;}
+footer p{
+    width: 65%;
+    color: #fff;
+    font-size: 18px;
+    text-align: right;
+}
+footer a{
+    padding: 7px 15px;
+    background-color:#517df0;
+    color: #fff;
+    border:2px solid #fff;
+    border-radius: 20px;
+
+}
+
+footer div:nth-child(1){
+    position: absolute;
+    bottom:0;
+    left: 80px ;
+}
+footer div:nth-child(2){
+    position: absolute;
+    top: 180px;
+    right: 150px;
+}
+footer div:nth-child(3){
+    position: absolute;
+    top: 300px;
+    right:-50px;
+}
+
+footer div:nth-child(4){
+    position: absolute;
+    top: 370px;
+    right:150px;
+}
+
+
+
+
+@media all and (max-width:850px) {
+    header{
+        height: 1000px;
+        display: grid;
+        grid-template-columns: 1,1fr;
+    }
+
+    header .left{
+        width: 100%;
+        height: 600px;
+        position:relative
+    }
+    header .left div:nth-child(2){
+        width: 25px;
+        height: 30px;
+        position:absolute;
+        top: 40px;
+        right:80px;
+        color: white;
+        display: flex;
+        flex: 1;
+        text-align: center;
+        padding: 5px;
+        font-size:25px;
+    }
+
+    header .left div:nth-child(3){
+        position:absolute;
+        top: 40;
+        left:550px;
+    }
+
+    header .left div:nth-child(4){
+        position:absolute;
+        top: 340px;
+        left:350px;
+    }
+
+    header .left div:nth-child(5){
+        position:absolute;
+        top: 600px;
+        left:90px;
+    }
+
+    header .right{
+        width: 100%;
+        height: 300px;
+        position:relative;
+        margin: 0;
+        padding: 0;
+    }
+    header .right ul li{
+        display: none;
+    }
+    header .right p{
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    footer{
+        height: 900px;
+        position: relative;
+    }
+    footer div:nth-child(2){
+        position: absolute;
+        right: 350px;
+    }
+    footer div:nth-child(3){
+        right: 60px;        
+    }
+    footer div:nth-child(1){
+        width: 910px;
+        right: 360px;        
+        /* top: 465px; */
+        bottom: 0;
+    }
+ 
+
+     
+    
+    
+}
